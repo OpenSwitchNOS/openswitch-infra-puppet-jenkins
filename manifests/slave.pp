@@ -91,7 +91,7 @@ class jenkins::slave(
   }
 
   package { 'tox':
-    ensure   => 'latest',
+    ensure   => 'present',
     provider => pip,
     require  => Class[pip],
   }
